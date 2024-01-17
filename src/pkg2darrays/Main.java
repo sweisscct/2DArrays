@@ -39,7 +39,18 @@ public class Main {
         String[] stringArray = new String[10];
         System.out.println(stringArray[4]);
         
+        /*
+        Nested loops
+        */
         
+        System.out.println(AnotherArray);
+        
+        for (int row=0; row<AnotherArray.length; row++) { // use AnotherArray.length instead of 4
+            System.out.println(AnotherArray[row]);
+            for (int col=0; col<AnotherArray[row].length; col++) {
+                System.out.println(AnotherArray[row][col]);
+            }
+        }
     }
     
 }
